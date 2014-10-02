@@ -63,5 +63,13 @@ public class Fraction {
     public double multiplicar(Fraction fraction){
     	return (double)6/15;
     }
+
+    public boolean esMayor(Fraction fraction) {
+        return true;
+    }
+
+    public boolean esPropia() {
+        return true;
+    }
     
 }
