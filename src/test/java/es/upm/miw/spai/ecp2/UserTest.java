@@ -25,5 +25,9 @@ public class UserTest {
         assertEquals("María Garcia", this.user.fullName());
     }
 
-  
+    @Test
+    public void testInitials() {
+        assertEquals("M.", this.user.initials());
+    }
+
 }
