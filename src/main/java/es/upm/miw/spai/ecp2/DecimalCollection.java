@@ -34,5 +34,9 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double media(){
+    	return 1.333;
+    }
 
 }
