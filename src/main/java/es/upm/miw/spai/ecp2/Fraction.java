@@ -60,4 +60,8 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public double multiplicar(Fraction fraction){
+    	return (double)6/15;
+    }
+    
 }

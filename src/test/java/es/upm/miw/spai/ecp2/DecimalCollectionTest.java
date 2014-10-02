@@ -44,5 +44,10 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(2.8, this.collection.higher(), 10e-3);
     }
+    
+    @Test
+    public void testMedia(){
+    	assertEquals(1.333, this.collection.media(), 10e-3);
+    }
 
 }
