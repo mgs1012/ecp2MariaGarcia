@@ -41,5 +41,12 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
+
+    public boolean sonIguales(Point p) {
+        // TODO Auto-generated method stub
+        return true;
+    }
+
+
     
 }

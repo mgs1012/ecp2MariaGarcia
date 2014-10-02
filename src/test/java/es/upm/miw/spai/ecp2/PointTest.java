@@ -50,9 +50,7 @@ public class PointTest {
 
     @Test
     public void testSonIguales() {
-        Point p = new Point(2,3);
-        assertEquals(p.getX(), pt.getX());
-        assertEquals(p.getY(), pt.getY());
+        assertEquals(true, this.pt.sonIguales(new Point(2,3)));
     }
 
 }
