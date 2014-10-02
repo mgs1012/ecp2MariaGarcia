@@ -30,5 +30,11 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(0.6667, this.fraction.decimal(), 10e-5);
     }
+    
+    @Test
+    public void testMultiplicar() {
+    	Fraction fraction1 = new Fraction(4, 5);
+        assertEquals(0.4, this.fraction.multiplicar(fraction1), 10e-5);
+    }
 
 }
