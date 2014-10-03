@@ -29,5 +29,9 @@ public class UserTest {
     public void testInitials() {
         assertEquals("M.", this.user.initials());
     }
+    @Test
+    public void testMostrarNombreCompletoMayusculas() {
+        assertEquals("Garcia,María", this.user.mostrarNombreCompletoMayusculas());
+    }
 
 }
