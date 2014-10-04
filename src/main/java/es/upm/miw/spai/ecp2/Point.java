@@ -43,8 +43,7 @@ public class Point {
     }
 
     public boolean sonIguales(Point p) {
-        // TODO Auto-generated method stub
-        return true;
+    	return (this.x == p.getX() && this.y == p.getY());
     }
 
 
