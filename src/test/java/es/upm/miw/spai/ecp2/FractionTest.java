@@ -40,7 +40,7 @@ public class FractionTest {
 
     @Test
     public void testEsMayor() {
-        Fraction fraction1 = new Fraction(4, 5);
+        Fraction fraction1 = new Fraction(1, 2);
         assertEquals(true, this.fraction.esMayor(fraction1));
     }
 
