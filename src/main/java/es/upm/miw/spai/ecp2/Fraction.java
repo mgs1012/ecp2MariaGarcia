@@ -61,7 +61,9 @@ public class Fraction {
     }
 
     public double multiplicar(Fraction fraction) {
-        double  multiplicacion = this.numerator * fraction.numerator / this.denominator * fraction.denominator;;
+        double multiplicacion = this.numerator * fraction.numerator / this.denominator
+                * fraction.denominator;
+        ;
         return multiplicacion;
     }
 
@@ -75,7 +77,7 @@ public class Fraction {
     }
 
     public boolean esPropia() {
-        return true;
+        return this.numerator < this.denominator;
     }
 
 }
