@@ -8,7 +8,7 @@ public class DecimalCollection {
 
     public DecimalCollection() {
         this.collection = new ArrayList<Double>();
-    } 
+    }
 
     public void add(double value) {
         this.collection.add(value);
@@ -34,9 +34,9 @@ public class DecimalCollection {
         }
         return higher;
     }
-    
-    public double media(){
-    	return 1.333;
+
+    public double media() {
+        return (double) sum() / size();
     }
 
 }
