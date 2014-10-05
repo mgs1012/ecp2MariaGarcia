@@ -35,47 +35,49 @@ package es.upm.miw.spai.ecp2;
  * 
  */
 public class Fraction {
-	private int numerator;
+    private int numerator;
 
-	private int denominator;
+    private int denominator;
 
-	public Fraction(int numerator, int denominator) {
-		this.numerator = numerator;
-		this.denominator = denominator;
-	}
+    public Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+    }
 
-	public Fraction() {
-		this(1, 1);
-	}
+    public Fraction() {
+        this(1, 1);
+    }
 
-	public int getNumerator() {
-		return numerator;
-	}
+    public int getNumerator() {
+        return numerator;
+    }
 
-	public int getDenominator() {
-		return denominator;
-	}
+    public int getDenominator() {
+        return denominator;
+    }
 
-	public double decimal() {
-		return (double) numerator / denominator;
-	}
+    public double decimal() {
+        return (double) numerator / denominator;
+    }
 
-	public double multiplicar(Fraction fraction) {
-		return (double) 6 / 15;
-	}
+    public Fraction multiplicar(Fraction fraction) {
+        Fraction multiplicacion = new Fraction();
+        multiplicacion.numerator = this.numerator * fraction.numerator;
+        multiplicacion.denominator = this.denominator * fraction.denominator;
+        return multiplicacion;
+    }
 
-	/*
-	 * dos fracciones A/B y C/D, de modo que A, B, C y D sean números enteros,
-	 * cada uno superior a cero. Si el producto de A x D es mayor que el de C x
-	 * B, entonces la fracción A/B es más grande que la C/D.
-	 */
-	public boolean esMayor(Fraction fraction) {
-		return this.numerator * fraction.denominator > this.denominator
-				* fraction.numerator;
-	}
+    /*
+     * dos fracciones A/B y C/D, de modo que A, B, C y D sean nï¿½meros enteros,
+     * cada uno superior a cero. Si el producto de A x D es mayor que el de C x
+     * B, entonces la fracciï¿½n A/B es mï¿½s grande que la C/D.
+     */
+    public boolean esMayor(Fraction fraction) {
+        return this.numerator * fraction.denominator > this.denominator * fraction.numerator;
+    }
 
-	public boolean esPropia() {
-		return true;
-	}
+    public boolean esPropia() {
+        return true;
+    }
 
 }
