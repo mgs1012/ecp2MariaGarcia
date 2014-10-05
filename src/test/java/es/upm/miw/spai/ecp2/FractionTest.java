@@ -35,7 +35,7 @@ public class FractionTest {
     @Test
     public void testMultiplicar() {
         Fraction fraction1 = new Fraction(4, 5);
-        assertEquals(0.4, this.fraction.multiplicar(fraction1), 10e-5);
+        assertEquals(0.533333, this.fraction.multiplicar(fraction1), 10e-5);
     }
 
     @Test
