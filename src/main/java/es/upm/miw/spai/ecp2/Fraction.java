@@ -61,10 +61,8 @@ public class Fraction {
     }
 
     public double multiplicar(Fraction fraction) {
-        double multiplicacion = this.numerator * fraction.numerator / this.denominator
-                * fraction.denominator;
-        ;
-        return multiplicacion;
+        return (double) this.numerator * (double)fraction.numerator / (double)this.denominator
+                * (double)fraction.denominator;
     }
 
     /*
